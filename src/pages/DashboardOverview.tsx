@@ -171,6 +171,23 @@ export default function DashboardOverview() {
 
   return (
     <div className="space-y-6 pb-8">
+      {/* Intent Workflows */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <a href="#/intents/schichtplanung" className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow flex items-center gap-4 border-l-4 border-l-primary min-w-0 overflow-hidden">
+          <div className="flex-1 min-w-0">
+            <div className="font-semibold text-sm truncate">Schicht einplanen</div>
+            <div className="text-xs text-muted-foreground mt-0.5 line-clamp-2">Mitarbeiter auswählen, Verfügbarkeit prüfen und Schichtzuweisung erstellen</div>
+          </div>
+          <IconChevronRight size={18} className="text-muted-foreground shrink-0" />
+        </a>
+        <a href="#/intents/wochenplan" className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow flex items-center gap-4 border-l-4 border-l-primary min-w-0 overflow-hidden">
+          <div className="flex-1 min-w-0">
+            <div className="font-semibold text-sm truncate">Wochenplan erstellen</div>
+            <div className="text-xs text-muted-foreground mt-0.5 line-clamp-2">Woche wählen, Schichtvorlage festlegen und mehrere Mitarbeiter auf einmal einplanen</div>
+          </div>
+          <IconChevronRight size={18} className="text-muted-foreground shrink-0" />
+        </a>
+      </div>
       {/* KPI Row */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         <StatCard
