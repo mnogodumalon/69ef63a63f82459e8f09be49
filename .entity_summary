@@ -1,0 +1,7 @@
+- Mitarbeiter (mitarbeiter): vorname[string/text], nachname[string/text], personalnummer[string/text], email[string/email], telefon[string/tel]
+- Schichtvorlagen (schichtvorlagen): schichtname[string/text], startzeit[string/text], endzeit[string/text], beschreibung[string/textarea]
+- Verfügbarkeit (verfuegbarkeit): mitarbeiter[applookup/select], datum[date/date], verfuegbarkeitsstatus[lookup/select], notizen[string/textarea]
+  → mitarbeiter links to app_id 69ef6388b28deed69bebae76
+- Schichtzuweisungen (schichtzuweisungen): mitarbeiter[applookup/select], schichtvorlage[applookup/select], datum[date/datetimeminute], tatsaechliche_startzeit[string/text], tatsaechliche_endzeit[string/text], bemerkungen[string/textarea]
+  → mitarbeiter links to app_id 69ef6388b28deed69bebae76
+  → schichtvorlage links to app_id 69ef638f9a9152e2ea3688e3

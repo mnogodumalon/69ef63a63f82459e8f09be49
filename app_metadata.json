@@ -1,0 +1,331 @@
+{
+  "appgroup_id": "69ef63a63f82459e8f09be49",
+  "appgroup_name": "Schichtplaner",
+  "apps": {
+    "mitarbeiter": {
+      "app_id": "69ef6388b28deed69bebae76",
+      "name": "Mitarbeiter",
+      "controls": {
+        "vorname": {
+          "identifier": "vorname",
+          "label": "Vorname",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "nachname": {
+          "identifier": "nachname",
+          "label": "Nachname",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "personalnummer": {
+          "identifier": "personalnummer",
+          "label": "Personalnummer",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "email": {
+          "identifier": "email",
+          "label": "E-Mail",
+          "type": "string",
+          "subtype": "email",
+          "fulltype": "string/email",
+          "description": "A valid email address (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "telefon": {
+          "identifier": "telefon",
+          "label": "Telefonnummer",
+          "type": "string",
+          "subtype": "tel",
+          "fulltype": "string/tel",
+          "description": "A valid telephone number (or `null`/`None`). Might include country prefix and should include area code.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        }
+      }
+    },
+    "schichtvorlagen": {
+      "app_id": "69ef638f9a9152e2ea3688e3",
+      "name": "Schichtvorlagen",
+      "controls": {
+        "schichtname": {
+          "identifier": "schichtname",
+          "label": "Schichtname",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "startzeit": {
+          "identifier": "startzeit",
+          "label": "Startzeit",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "endzeit": {
+          "identifier": "endzeit",
+          "label": "Endzeit",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "beschreibung": {
+          "identifier": "beschreibung",
+          "label": "Beschreibung",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        }
+      }
+    },
+    "verfuegbarkeit": {
+      "app_id": "69ef63909310729986d3d860",
+      "name": "Verfügbarkeit",
+      "controls": {
+        "mitarbeiter": {
+          "identifier": "mitarbeiter",
+          "label": "Mitarbeiter",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "description": "A reference to a LivingApp record from the target lookup app 'Mitarbeiter' with the id `69ef6388b28deed69bebae76` (or `null`/`None`).\n\nThe field value will be a valid record URL in the form `https://test.living-apps.de/rest/apps/69ef6388b28deed69bebae76/<record-id>` (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "lookup_app": "https://test.living-apps.de/rest/apps/69ef6388b28deed69bebae76"
+        },
+        "datum": {
+          "identifier": "datum",
+          "label": "Datum",
+          "type": "date",
+          "subtype": "date",
+          "fulltype": "date/date",
+          "description": "A calendar date consisting of year, month and day (or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>` (or `null`/`None`).\n\nFor example: `2000-02-29`.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "verfuegbarkeitsstatus": {
+          "identifier": "verfuegbarkeitsstatus",
+          "label": "Verfügbarkeitsstatus",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "description": "One selected option of multiple available options (or `null`/`None`).\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be the key in this `lookup_data` attribute (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "lookup_data": {
+            "verfuegbar": "Verfügbar",
+            "nicht_verfuegbar": "Nicht verfügbar",
+            "eingeschraenkt_verfuegbar": "Eingeschränkt verfügbar"
+          }
+        },
+        "notizen": {
+          "identifier": "notizen",
+          "label": "Notizen",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        }
+      }
+    },
+    "schichtzuweisungen": {
+      "app_id": "69ef6391561612c76f338dfc",
+      "name": "Schichtzuweisungen",
+      "controls": {
+        "mitarbeiter": {
+          "identifier": "mitarbeiter",
+          "label": "Mitarbeiter",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "description": "A reference to a LivingApp record from the target lookup app 'Mitarbeiter' with the id `69ef6388b28deed69bebae76` (or `null`/`None`).\n\nThe field value will be a valid record URL in the form `https://test.living-apps.de/rest/apps/69ef6388b28deed69bebae76/<record-id>` (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "lookup_app": "https://test.living-apps.de/rest/apps/69ef6388b28deed69bebae76"
+        },
+        "schichtvorlage": {
+          "identifier": "schichtvorlage",
+          "label": "Schichtvorlage",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "description": "A reference to a LivingApp record from the target lookup app 'Schichtvorlagen' with the id `69ef638f9a9152e2ea3688e3` (or `null`/`None`).\n\nThe field value will be a valid record URL in the form `https://test.living-apps.de/rest/apps/69ef638f9a9152e2ea3688e3/<record-id>` (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "lookup_app": "https://test.living-apps.de/rest/apps/69ef638f9a9152e2ea3688e3"
+        },
+        "datum": {
+          "identifier": "datum",
+          "label": "Datum und Uhrzeit",
+          "type": "date",
+          "subtype": "datetimeminute",
+          "fulltype": "date/datetimeminute",
+          "description": "A specific moment in time consisting of year, month, day, hour and minute (or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>T<HH>:<MM>` (or `null`/`None`).\n\nFor example: `2000-02-29T11:30`.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "tatsaechliche_startzeit": {
+          "identifier": "tatsaechliche_startzeit",
+          "label": "Tatsächliche Startzeit (falls abweichend)",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "tatsaechliche_endzeit": {
+          "identifier": "tatsaechliche_endzeit",
+          "label": "Tatsächliche Endzeit (falls abweichend)",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "bemerkungen": {
+          "identifier": "bemerkungen",
+          "label": "Bemerkungen",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": null,
+          "in_expert_search": true
+        }
+      }
+    }
+  },
+  "metadata": {
+    "apps_list": [
+      "Mitarbeiter",
+      "Schichtvorlagen",
+      "Verfügbarkeit",
+      "Schichtzuweisungen"
+    ]
+  }
+}

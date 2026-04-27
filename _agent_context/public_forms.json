@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "mitarbeiter",
+      "app_id": "69ef6388b28deed69bebae76",
+      "path": "/rest/apps/69ef6388b28deed69bebae76/records",
+      "allowed_fields": [
+        "vorname",
+        "nachname",
+        "personalnummer",
+        "email",
+        "telefon"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Mitarbeiter — Formular"
+    },
+    {
+      "entity": "schichtvorlagen",
+      "app_id": "69ef638f9a9152e2ea3688e3",
+      "path": "/rest/apps/69ef638f9a9152e2ea3688e3/records",
+      "allowed_fields": [
+        "schichtname",
+        "startzeit",
+        "endzeit",
+        "beschreibung"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Schichtvorlagen — Formular"
+    },
+    {
+      "entity": "verfuegbarkeit",
+      "app_id": "69ef63909310729986d3d860",
+      "path": "/rest/apps/69ef63909310729986d3d860/records",
+      "allowed_fields": [
+        "datum",
+        "verfuegbarkeitsstatus",
+        "notizen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Verfügbarkeit — Formular"
+    },
+    {
+      "entity": "schichtzuweisungen",
+      "app_id": "69ef6391561612c76f338dfc",
+      "path": "/rest/apps/69ef6391561612c76f338dfc/records",
+      "allowed_fields": [
+        "datum",
+        "tatsaechliche_startzeit",
+        "tatsaechliche_endzeit",
+        "bemerkungen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Schichtzuweisungen — Formular"
+    }
+  ]
+}
